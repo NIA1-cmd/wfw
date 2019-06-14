@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/unit_15">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_style_07"
+        android:layout_marginLeft="@dimen/unit_10"
+        tools:text="dsfsdfsdf" />
+
+
+    <EditText
+
+        android:id="@+id/et_input"
+        style="@style/text_style_07"
+        android:layout_toLeftOf="@+id/iv_endicon"
+        android:gravity="right|center_vertical"
+        android:background="@null"
+
+        android:hint="sssss" />
+
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_endicon"
+        android:layout_width="@dimen/unit_12"
+        android:layout_height="@dimen/unit_12"
+        android:layout_alignParentRight="true"
+        tools:src="@drawable/back" />
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="@dimen/unit_15"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="@dimen/unit_15"
+            android:layout_height="@dimen/unit_00" />
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_01" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <script type="text/javascript">
+
+        function jsTest(){
+            callAndroid();
+        }
+
+
+        function connectWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+            } else {
+                document.addEventListener(
+                    'WebViewJavascriptBridgeReady'
+                    , function() {
+                        callback(WebViewJavascriptBridge)
+                    },
+                    false
+                );
+            }
+        }
+
+        connectWebViewJavascriptBridge(function(bridge) {
+            bridge.init(function(message, responseCallback) {
+                console.log('JS got a message', message);
+                var data = {
+                    'Javascript Responds': '测试中文!'
+                };
+
+                if (responseCallback) {
+                    console.log('JS responding with', data);
+                    responseCallback(data);
+                }
+            });
+             bridge.registerHandler("functionInJs", function(data, responseCallback) {
+
+                callAndroid();
+
+            });
+        })
+
+
+
+        function callAndroid(){
+             window.WebViewJavascriptBridge.callHandler('action' ,{'type': 'playAudio'} , function(responseData) {
+                alert(responseData);
+                console.log(responseData);
+             });
+        }
+    </script>
+</head>
+<body>
+<div id="a">内容显示</div>
+</body>
+</html>

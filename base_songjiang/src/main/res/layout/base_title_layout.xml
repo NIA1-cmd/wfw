@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center_vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="@dimen/unit_30"
+        android:layout_height="@dimen/unit_30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="@dimen/unit_07"
+        tools:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_toRightOf="@+id/iv_left"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_16"
+        tools:text="aaaaa"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/unit_10"
+        android:layout_toRightOf="@+id/iv_left"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="aaaaa" />
+
+
+    <TextView
+        android:id="@+id/tv_right"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/iv_right"
+        android:gravity="center_vertical"
+        tools:text="aaaaa" />
+
+    <ImageView
+
+        android:id="@+id/iv_right"
+        android:layout_width="@dimen/unit_30"
+        android:layout_height="@dimen/unit_30"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/unit_20"
+        tools:src="@drawable/casehandling" />
+
+    <!--<include-->
+    <!--android:id="@+id/ic_line01"-->
+    <!--android:layout_marginTop="@dimen/unit_05"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_below="@+id/tv_title"-->
+    <!--android:layout_height="@dimen/unit_01"-->
+    <!--layout="@layout/line_layout"-->
+    <!--/>-->
+</RelativeLayout>

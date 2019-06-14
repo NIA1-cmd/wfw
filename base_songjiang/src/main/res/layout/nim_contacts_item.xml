@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/nim_contact_list_item_selecter"--><!--android:minHeight="55dip">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/unit_10"
+    android:layout_marginRight="@dimen/unit_10"
+    android:background="@color/white"
+    tools:background="@color/white">
+
+    <View
+        android:id="@+id/v_lien"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="10dp"
+        android:visibility="visible"
+        android:background="@color/backgroundcolor_01" />
+
+    <!--<RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <com.oncloudsoft.yunxin.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/contacts_item_head"
+            android:layout_width="@dimen/avatar_size_in_contact"
+            android:layout_height="@dimen/avatar_size_in_contact"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/app_logo" />
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/contacts_item_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_lien"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <View
+                android:id="@+id/v_lien1"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_height="10dp"
+                android:visibility="visible"
+                android:background="@color/white" />
+            <TextView
+                android:layout_below="@+id/v_lien1"
+                android:id="@+id/contacts_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/orthercolor_02"
+                android:textSize="@dimen/textsize_small_x_x"
+                android:visibility="visible"
+                android:layout_marginRight="@dimen/unit_25"
+                tools:text="dfsdf" />
+
+            <TextView
+                android:layout_below="@+id/v_lien1"
+                android:id="@+id/contacts_item_name"
+                style="@style/text_style_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/unit_10"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                tools:text="adfsdfsfds" />
+
+            <ImageView
+                android:id="@+id/iv_new"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_new"
+                />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_0.5"
+            android:layout_marginBottom="@dimen/unit_10"
+            android:layout_marginLeft="@dimen/unit_15"
+            android:layout_marginRight="@dimen/unit_15"
+            android:layout_marginTop="@dimen/unit_08" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/unit_15"
+            android:layout_marginRight="@dimen/unit_25"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/unit_01"
+                android:gravity="center_vertical"
+                android:text="asdfasdf"
+                android:textColor="@color/color_black_ff666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/contacts_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/unit_05"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/color_black_ff666666"
+                android:textSize="14sp"
+                tools:text="654464" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.oncloudsoft.sdk.yunxin.uikit.common.ui.drop.DropFake
+                android:id="@+id/unread_number_tip"
+                android:layout_width="@dimen/unit_20"
+                android:layout_height="@dimen/unit_20"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/unit_10"
+            android:layout_marginLeft="@dimen/unit_15"
+            android:layout_marginRight="@dimen/unit_25"
+            android:layout_marginTop="@dimen/unit_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_apply"
+                style="@style/apply_text_sqrbzxr"
+                android:ellipsize="end"
+                android:maxEms="15"
+                android:singleLine="true"
+                tools:text="被执行人:张三,历史,王五,麻溜,才起,递四方速递发发啊" />
+
+            <TextView
+
+                android:id="@+id/tv_executed"
+                style="@style/apply_text_sqrbzxr"
+                android:layout_marginLeft="@dimen/unit_10"
+                android:ellipsize="end"
+                android:maxEms="15"
+                android:singleLine="true"
+                tools:text="被执行人:张三,历史,王五,麻溜,才起,递四方速递发发啊" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

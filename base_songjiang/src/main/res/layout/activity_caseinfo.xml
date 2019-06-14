@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.oncloudsoft.sdk.view.BaseTitleView
+        android:id="@+id/bt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="基本信息"
+        />
+    <!--<ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unit_110"
+                    android:background="@color/message_bc"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/unit_10"
+                        android:layout_marginRight="@dimen/unit_10"
+                        android:layout_marginTop="@dimen/unit_20"
+                        android:background="@drawable/white_radius"
+                        android:orientation="vertical"
+                        >
+                        &lt;!&ndash;<com.oncloudsoft.view.BaseItemTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:endIconVisibility="gone"
+                            app:ent_color="normal1"
+                            app:labName="立案信息"
+                            />&ndash;&gt;
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_50"
+                            android:gravity="center_vertical"
+                            >
+
+                            <View
+                                android:layout_width="@dimen/unit_2.5"
+                                android:layout_height="@dimen/unit_12"
+                                android:background="@color/color_view_bg"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8.5dp"
+                                android:text="立案信息"
+                                android:textColor="@color/textcolor_05"
+                                android:textSize="@dimen/text_size_15"
+                                />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_0.5"
+                            android:layout_marginLeft="@dimen/unit_10"
+                            android:layout_marginRight="@dimen/unit_10"
+                            android:background="@color/orthercolor_03"
+                            />
+
+                        <com.oncloudsoft.view.BaseItemTextView
+                            android:id="@+id/bt_caseorigins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/unit_00"
+                            android:paddingLeft="@dimen/unit_negative_01"
+                            app:endIconVisibility="gone"
+                            app:labName="立案来源"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_0.5"
+                            android:layout_marginLeft="@dimen/unit_10"
+                            android:layout_marginRight="@dimen/unit_10"
+                            android:background="@color/orthercolor_03"
+                            />
+
+                        <com.oncloudsoft.view.BaseItemTextView
+                            android:id="@+id/bt_casereasons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/unit_00"
+                            android:paddingLeft="@dimen/unit_negative_01"
+                            app:endIconVisibility="gone"
+                            app:labName="立案案由"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_0.5"
+                            android:layout_marginLeft="@dimen/unit_10"
+                            android:layout_marginRight="@dimen/unit_10"
+                            android:background="@color/orthercolor_03"
+                            />
+
+                        <com.oncloudsoft.view.BaseItemTextView
+                            android:id="@+id/bt_casedatas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/unit_00"
+                            android:paddingLeft="@dimen/unit_negative_01"
+                            app:endIconVisibility="gone"
+                            app:labName="立案日期"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_0.5"
+                            android:layout_marginLeft="@dimen/unit_10"
+                            android:layout_marginRight="@dimen/unit_10"
+                            android:background="@color/orthercolor_03"
+                            />
+
+                        <com.oncloudsoft.view.BaseItemTextView
+                            android:id="@+id/bt_overdata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/unit_00"
+                            android:paddingLeft="@dimen/unit_negative_01"
+                            android:visibility="gone"
+                            app:endIconVisibility="gone"
+                            app:labName="结案日期"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_ajyj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/unit_10"
+                        android:layout_marginRight="@dimen/unit_10"
+                        android:layout_marginTop="@dimen/unit_20"
+                        android:background="@drawable/white_radius"
+                        android:orientation="vertical"
+                        >
+
+                        &lt;!&ndash;<com.oncloudsoft.view.BaseItemTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:endIconVisibility="gone"
+                            app:ent_color="normal1"
+                            app:labName="执法依据"
+                            />&ndash;&gt;
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_50"
+                            android:gravity="center_vertical"
+                            >
+
+                            <View
+                                android:layout_width="@dimen/unit_2.5"
+                                android:layout_height="@dimen/unit_12"
+                                android:background="@color/color_view_bg"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8.5dp"
+                                android:text="执法依据"
+                                android:textColor="@color/textcolor_05"
+                                android:textSize="@dimen/text_size_15"
+                                />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_0.5"
+                            android:layout_marginLeft="@dimen/unit_10"
+                            android:layout_marginRight="@dimen/unit_10"
+                            android:background="@color/orthercolor_03"
+                            />
+
+                        <com.oncloudsoft.view.BaseItemTextView
+                            android:id="@+id/bt_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/unit_00"
+                            android:paddingLeft="@dimen/unit_negative_01"
+                            app:endIconVisibility="gone"
+                            app:labName="执法依据类型"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_0.5"
+                            android:layout_marginLeft="@dimen/unit_10"
+                            android:layout_marginRight="@dimen/unit_10"
+                            android:background="@color/orthercolor_03"
+                            />
+
+                        <com.oncloudsoft.view.BaseItemTextView
+                            android:id="@+id/bt_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/unit_00"
+                            android:paddingLeft="@dimen/unit_negative_01"
+                            app:endIconVisibility="gone"
+                            app:labName="执法依据单位"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/unit_0.5"
+                            android:layout_marginLeft="@dimen/unit_10"
+                            android:layout_marginRight="@dimen/unit_10"
+                            android:background="@color/orthercolor_03"
+                            />
+
+                        <com.oncloudsoft.view.BaseItemTextView
+                            android:id="@+id/bt_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/unit_00"
+                            android:paddingLeft="@dimen/unit_negative_01"
+                            app:endIconVisibility="gone"
+                            app:labName="执法依据文号"
+                            />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_zxbd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/unit_50"
+                        android:layout_marginLeft="@dimen/unit_10"
+                        android:layout_marginRight="@dimen/unit_10"
+                        android:layout_marginTop="@dimen/unit_20"
+                        android:background="@drawable/white_radius"
+                        android:gravity="center_vertical"
+                        >
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="@dimen/unit_2.5"
+                            android:layout_height="@dimen/unit_12"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/color_view_bg"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8.5dp"
+                            android:layout_toRightOf="@+id/view"
+                            android:text="执行标的"
+                            android:textColor="@color/textcolor_05"
+                            android:textSize="@dimen/text_size_15"
+                            />
+
+                        <TextView
+                            android:id="@+id/bt_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textView2"
+                            android:layout_alignBottom="@+id/textView2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/unit_10"
+                            android:textColor="@color/textcolor_05"
+                            android:textSize="@dimen/normal_textsize_01"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="执行主体"
+                        android:layout_marginTop="@dimen/unit_10"
+                        android:layout_marginBottom="@dimen/unit_10"
+                        android:textSize="@dimen/text_size_11"
+                        android:layout_marginLeft="@dimen/unit_21"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_apply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_executed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+                &lt;!&ndash;</LinearLayout>&ndash;&gt;
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_startpdf"
+                android:background="@color/white"
+                android:paddingTop="@dimen/unit_10"
+                android:paddingBottom="@dimen/unit_10"
+                android:gravity="center"
+                android:textColor="@color/robot_link_element_text_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="裁判文书"
+                android:textSize="@dimen/textsize_large_x_x"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/unit_20"
+                />
+        </LinearLayout>
+    </ScrollView>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/unit_40"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/unit_30"-->
+    <!--android:layout_height="@dimen/unit_30"-->
+    <!--android:src="@drawable/back" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_title"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="" />-->
+    <!--</LinearLayout>-->
+    <!--<fragment
+        android:id="@+id/fragment1"
+        android:name="com.oncloudsoft.fragment.CaseInfoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />-->
+    <FrameLayout android:id="@+id/frameLayout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <com.oncloudsoft.sdk.view.BaseTitleView
+        android:id="@+id/base_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="@string/caseagent_approval" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+            android:layout_marginLeft="@dimen/unit_10"
+            android:layout_marginBottom="@dimen/unit_20"
+            android:layout_marginRight="@dimen/unit_10"
+            android:layout_marginTop="@dimen/unit_20"
+            android:background="@drawable/white_radius"
+
+            android:orientation="vertical"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+            android:id="@+id/tv_casename"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_45"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gary_radius_07"
+            android:gravity="center"
+            android:textColor="@color/maincolor_01"
+            android:textSize="@dimen/textsize_large"
+            tools:text="qqq" />
+
+            <com.oncloudsoft.sdk.view.BaseItemTextView
+            android:id="@+id/bt_executebody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:endIconVisibility="gone"
+            app:labName="@string/executed_body" />
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_0.5"
+            android:layout_marginLeft="@dimen/unit_10"
+            android:layout_marginRight="@dimen/unit_10"
+            android:background="@color/orthercolor_03" />
+
+            <com.oncloudsoft.sdk.view.BaseItemTextView
+            android:id="@+id/bt_executestate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:endIconVisibility="gone"
+            app:labName="@string/litigation_status" />
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_0.5"
+            android:layout_marginLeft="@dimen/unit_10"
+            android:layout_marginRight="@dimen/unit_10"
+            android:background="@color/orthercolor_03" />
+
+            <com.oncloudsoft.sdk.view.BaseItemTextView
+            android:id="@+id/bt_executenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:endIconVisibility="gone"
+            app:labName="@string/executenumber" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit_20"
+                android:layout_marginLeft="@dimen/unit_10"
+                android:layout_marginRight="@dimen/unit_10"
+                android:background="@drawable/white_radius"
+                android:orientation="vertical">
+
+
+                <com.oncloudsoft.sdk.view.BaseItemTextView
+                    android:id="@+id/bt_agenttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:endIconVisibility="gone"
+                    app:labName="@string/agenttype" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unit_0.5"
+                    android:layout_marginLeft="@dimen/unit_10"
+                    android:layout_marginRight="@dimen/unit_10"
+                    android:background="@color/orthercolor_03" />
+
+                <com.oncloudsoft.sdk.view.BaseItemTextView
+                    android:id="@+id/bt_applyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:endIconVisibility="gone"
+                    app:labName="@string/apply_people" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unit_0.5"
+                    android:layout_marginLeft="@dimen/unit_10"
+                    android:layout_marginRight="@dimen/unit_10"
+                    android:background="@color/orthercolor_03" />
+
+                <com.oncloudsoft.sdk.view.BaseItemTextView
+                    android:id="@+id/bt_idnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:endIconVisibility="gone"
+                    app:labName="@string/idnumber" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unit_0.5"
+                    android:layout_marginLeft="@dimen/unit_10"
+                    android:layout_marginRight="@dimen/unit_10"
+                    android:background="@color/orthercolor_03" />
+
+                <com.oncloudsoft.sdk.view.BaseItemTextView
+                    android:id="@+id/bt_unitname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:endIconVisibility="gone"
+                    app:labName="@string/unitname" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unit_0.5"
+                    android:layout_marginLeft="@dimen/unit_10"
+                    android:layout_marginRight="@dimen/unit_10"
+                    android:background="@color/orthercolor_03" />
+
+                <com.oncloudsoft.sdk.view.BaseItemTextView
+                    android:id="@+id/bt_connection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:endIconVisibility="gone"
+                    app:labName="@string/contactinformation" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unit_0.5"
+                    android:layout_marginLeft="@dimen/unit_10"
+                    android:layout_marginRight="@dimen/unit_10"
+                    android:background="@color/orthercolor_03" />
+
+                <LinearLayout
+                    android:id="@+id/ll_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/unit_30"
+                    android:layout_marginTop="@dimen/unit_30"
+                    android:visibility="gone">
+
+
+                    <Button
+                        android:id="@+id/bt_refuse"
+                        style="@style/button_style_red01"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/refuse" />
+
+                    <Button
+                        android:id="@+id/bt_pass"
+                        style="@style/button_style_blue01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/pass" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/unit_30"
+                    android:layout_marginRight="@dimen/unit_20"
+                    android:layout_marginTop="@dimen/unit_30"
+                    android:gravity="right"
+                    android:textColor="@color/maincolor_01"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

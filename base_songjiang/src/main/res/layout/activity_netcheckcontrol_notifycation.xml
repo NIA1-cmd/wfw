@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.oncloudsoft.sdk.view.BaseTitleView
+        android:id="@+id/bt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/unit_10"
+        app:titleText="网络查控告知书"
+        app:title_type="white">
+
+    </com.oncloudsoft.sdk.view.BaseTitleView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/bt_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/text_style_07"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/unit_15"
+
+                    android:background="@drawable/gray_radius_11"
+                    android:padding="@dimen/unit_08"
+                    tools:text="飞机手动及佛山东方嘉盛电视剧佛瑟吉欧附件三方" />
+
+            </RelativeLayout>
+
+            <com.oncloudsoft.sdk.view.LabTitleLayout
+                android:id="@+id/lb_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_content"
+                android:layout_marginTop="@dimen/unit_10"
+                app:titleName="总对总新增反馈列表">
+
+            </com.oncloudsoft.sdk.view.LabTitleLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_new_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lb_title"
+                android:background="@color/white">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.oncloudsoft.sdk.view.LabTitleLayout
+                android:id="@+id/lb_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_new_list"
+                android:layout_marginTop="@dimen/unit_10"
+
+                app:titleName="总对总历史反馈列表">
+
+            </com.oncloudsoft.sdk.view.LabTitleLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_history_list"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lb_title2"
+                android:background="@color/white">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

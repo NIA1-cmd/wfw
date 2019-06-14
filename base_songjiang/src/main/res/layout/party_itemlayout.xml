@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/unit_20"
+    android:layout_marginLeft="@dimen/unit_10"
+    android:layout_marginRight="@dimen/unit_10"
+    android:background="@drawable/white_radius"
+    android:orientation="vertical"
+   >
+
+
+    <com.oncloudsoft.sdk.view.LabTitleLayout
+        app:titleName="申请执行人"
+        android:id="@+id/lb_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.oncloudsoft.sdk.view.LabTitleLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/unit_50"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<View-->
+    <!--android:id="@+id/view"-->
+    <!--android:layout_width="@dimen/unit_2.5"-->
+    <!--android:layout_height="@dimen/unit_12"-->
+    <!--android:background="@color/color_view_bg" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="8.5dp"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/textcolor_05"-->
+    <!--android:textSize="@dimen/text_size_15" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/unit_0.5"-->
+        <!--android:layout_marginLeft="@dimen/unit_10"-->
+        <!--android:background="@color/orthercolor_03" />-->
+
+    <com.oncloudsoft.sdk.view.BaseItemTextView
+        android:id="@+id/bt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconVisibility="gone"
+        app:labName="姓名/名称"
+        app:lineVisibility="visible" />
+
+
+    <com.oncloudsoft.sdk.view.BaseItemTextView
+        android:id="@+id/bt_document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconVisibility="gone"
+
+        app:labName="@string/id_number"
+        app:lineVisibility="visible" />
+
+    <com.oncloudsoft.sdk.view.BaseItemTextView
+        android:id="@+id/bt_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconVisibility="gone"
+        app:labName="@string/type"
+        app:lineVisibility="visible" />
+
+
+    <com.oncloudsoft.sdk.view.BaseItemTextView
+        android:id="@+id/bt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconVisibility="gone"
+        app:labName="@string/address"
+        app:lineVisibility="visible" />
+
+
+    <com.oncloudsoft.sdk.view.BaseItemTextView
+        android:id="@+id/bt_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconVisibility="gone"
+        app:labName="@string/contactinformation" />
+
+
+</LinearLayout>

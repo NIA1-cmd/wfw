@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.oncloudsoft.sdk.view.BaseTitleView
+        android:id="@+id/bt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="用户信息"
+        app:title_type="white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="@dimen/unit_51"
+            android:layout_height="@dimen/unit_51"
+            android:layout_marginLeft="@dimen/unit_15"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/unit_20"
+            android:text=""
+            android:textColor="@color/textcolor_01"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/unit_15">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_05"
+            android:text=""
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_sfz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_15"
+            android:text=""
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_15"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_telphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/unit_15"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_55"
+        android:layout_marginTop="@dimen/unit_15"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/unit_25"
+            android:layout_height="@dimen/unit_25"
+            android:src="@drawable/icon_blue_message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/unit_05"
+            android:text="发送消息"
+            android:textColor="@color/maincolor_01"
+            android:textSize="@dimen/unit_15" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

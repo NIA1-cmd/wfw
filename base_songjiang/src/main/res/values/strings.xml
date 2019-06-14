@@ -1,0 +1,495 @@
+﻿<resources>
+    <string name="app_name">移动执行</string>
+    <!--<string name="yunxin_appkey"> f7e6d5ff154ca4b615abc8488da0c4c4</string>-->
+
+    <string name="yunxin_test_appkey">f7e6d5ff154ca4b615abc8488da0c4c4</string>
+    <string name="yunxin_product_appkey">4d4cbcbeaa65f388a289c980e98081f9</string>
+
+
+
+    <string name="gaode_appkey_product">7f02b9b66d436aed2124d39fded1f1b0</string>
+    <string name="gaode_appkey_test">853cad0b5f1846ecac9f3d0bb2a5f01e</string>
+
+
+    <string name="baidu_appid">15337175</string>
+    <string name="baidu_apikey">QexznmrisNXGk1EGc0SBkSlq</string>
+    <string name="baidu_secretkey">DdcndCHpjogBLrNakvrSyIfD0U07pgwN</string>
+
+    <string name="case_">案件</string>
+    <string name="see_details">查看详情</string>
+    <string name="tool">工具</string>
+    <string name="mine">我</string>
+    <string name="search">搜索</string>
+    <string name="address">地址</string>
+    <string name="verdict">审判文书</string>
+    <string name="virtual_phone">虚拟电话</string>
+    <string name="message_notifi">消息通知</string>
+    <string name="message_node_acquisition">节点采集</string>
+    <string name="message_media_collection">多媒体采集</string>
+    <string name="service_documents">文书送达</string>
+    <string name="final_interview">终本约谈</string>
+    <string name="consulting_reply">咨询回复</string>
+    <string name="wenshu_yulan">文书预览</string>
+    <string name="choosecourt">选择法院</string>
+    <string name="confirm">确定</string>
+    <string name="send_state">送达状态</string>
+
+    <string name="apply_people_">申请人:</string>
+    <string name="apply_people_s">申 请 人:</string>
+    <string name="apply_people">申请人</string>
+    <string name="executed_people">被执行人</string>
+    <string name="executed_people_">被执行人:</string>
+    <string name="caseno_peoplename">案号/公司名/当事人姓名拼音首字母</string>
+    <string name="lyrical_analysis">舆情风险</string>
+    <string name="lyrical_party">当事人舆情</string>
+    <string name="my_approval">我的审批</string>
+    <string name="lyrical_record">聊天记录</string>
+    <string name="anjianguanlian">关联案件</string>
+    <string name="case_info">案件信息</string>
+
+    <string name="casename">案     号</string>
+    <string name="casereason">案    由</string>
+    <string name="sendtime">发送时间</string>
+    <string name="starttime">启动时间</string>
+    <string name="djqx">冻结期限</string>
+    <string name="singletime">签收时间</string>
+    <string name="ckfw">查控范围</string>
+    <string name="teammember">群成员</string>
+    <string name="casehandling">案件办理</string>
+
+
+    <string name="sendpeople">受送达人</string>
+    <string name="servicedocument_name">文书名称</string>
+    <string name="unsingle">未签收</string>
+    <string name="clueprovide">线索核查</string>
+    <string name="cluereport">线索举报</string>
+
+    <!--<string name="input_panel_ack_msg">已读回执</string>-->
+
+
+    <!--<string name="input_panel_guess">猜 拳</string>-->
+    <!--<string name="input_panel_audio_call">语音通话</string>-->
+    <!--<string name="input_panel_video_call">视频通话</string>-->
+    <!--<string name="input_panel_file">发送文件</string>-->
+    <!--<string name="input_panel_RTS">白 板</string>-->
+    <!--<string name="input_panel_snapchat">阅后即焚</string>-->
+    <!--<string name="input_panel_tip">Tip</string>-->
+
+    <!-- common -->
+    <string name="empty"></string>
+    <string name="ok">确定</string>
+    <string name="confirmed">已确认</string>
+    <string name="tobe_confirmed">待确认</string>
+    <string name="cancel">取消</string>
+    <string name="hold_state">执结状态</string>
+    <string name="approval_pending">待审批</string>
+    <string name="approval_passed">已通过</string>
+    <string name="approval_rejected">已拒绝</string>
+    <string name="approval_refuseed">已驳回</string>
+
+    <string name="verification_pending">等待核查</string>
+    <string name="verification_passed">核查属实</string>
+    <string name="verification_rejected">核查不实</string>
+
+    <string name="cfwsyr">查封物所有人</string>
+    <string name="cfwmc">查封物名称</string>
+    <string name="djcwsyr">冻结财物所有人</string>
+    <string name="djsj">冻结时间</string>
+    <string name="cfsj">查封时间</string>
+    <string name="cfqx">查封期限</string>
+    <string name="hold_way">执结方式</string>
+    <string name="unconnected">未接通</string>
+    <string name="connected">已接通</string>
+    <string name="hold_info">执结信息</string>
+    <string name="car_info">车辆信息</string>
+    <string name="car_number">车牌号</string>
+    <string name="car_type">车辆类型</string>
+    <string name="find_place">发现地点</string>
+    <string name="clear_empty">清空</string>
+    <string name="iknow">知道了</string>
+    <string name="remove">移除</string>
+    <string name="add">添加</string>
+    <string name="create">新建</string>
+    <string name="without_content">暂无</string>
+    <string name="empty_content">暂无数据</string>
+    <string name="network_is_not_available">网络连接失败，请检查你的网络设置</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="menu">菜单</string>
+    <string name="now_allow_space">不能含有空格</string>
+    <string name="readed">已读</string>
+    <string name="call_to_wangliang">“给王亮打电话” 或“打电话给王亮”</string>
+    <string name="open_case_wangliang">“打开王亮的案子” 或 “打开2223号案子”</string>
+    <string name="takepic_takevideo">“拍照” 或 “拍摄”</string>
+    <!-- session -->
+    <string name="input_panel_photo">图 片</string>
+    <string name="input_panel_video">视 频</string>
+    <string name="input_panel_location">位 置</string>
+    <string name="input_panel_take">拍 照</string>
+    <string name="please_choose">请选择</string>
+    <string name="please_input">请输入</string>
+    <string name="im_choose_pic">请选择JPG PNG BMP GIF格式的图片文件</string>
+    <string name="repeat_download_message">重新下载?</string>
+    <string name="repeat_send_has_blank">重 发</string>
+    <string name="repeat_send_message">重发消息?</string>
+    <string name="copy_has_blank">复 制</string>
+    <string name="delete_has_blank">删 除</string>
+    <string name="voice_to_text">转文字</string>
+    <string name="forward_to_person">转发到个人</string>
+    <string name="forward_to_team">转发到群组</string>
+    <string name="withdrawn_msg">撤 回</string>
+    <string name="save">保存</string>
+    <string name="main_msg_list_delete_chatting">删除该聊天</string>
+    <string name="main_msg_list_sticky_on_top">置顶该聊天</string>
+    <string name="main_msg_list_clear_sticky_on_top">取消置顶</string>
+    <string name="save_to_device">保存到手机</string>
+    <string name="picture_save_fail">图片保存失败</string>
+    <string name="picture_save_to">图片已保存到手机</string>
+    <string name="search_join_team">搜索加入群组</string>
+    <string name="file_transfer_state_downloaded">已下载</string>
+    <string name="file_transfer_state_undownload">未下载</string>
+    <string name="trans_voice_failed">语音转化失败</string>
+    <string name="team_invalid_tip">您已退出该群</string>
+    <string name="normal_team_invalid_tip">您已退出该讨论组</string>
+    <string name="team_send_message_not_allow">您已不在该群，不能发送消息</string>
+    <string name="send">发送</string>
+    <string name="reconciliation_protocol_pdf">和解协议.pdf</string>
+    <string name="wenshu_type">文书类型</string>
+    <string name="guide_handcase">办案指引</string>
+    <string name="unsupport_title">无法显示该内容</string>
+    <string name="unsupport_desc">客户端版本不支持该内容</string>
+    <string name="revoke_failed">发送时间超过2分钟的消息，不能被撤回</string>
+    <string name="pic_and_video">图片和视频</string>
+    <string name="history_call_record">历史通话记录</string>
+    <string name="black_list_send_tip">消息已发送，但对方拒收</string>
+
+    <!-- 语音 -->
+    <string name="record_audio">按住 说话</string>
+    <string name="record_audio_end">松开  结束</string>
+    <string name="sdcard_not_exist_error">请插入SD卡</string>
+    <string name="recording_error">录音失败，请重试</string>
+    <string name="recording_init_failed">初始化录音失败</string>
+    <string name="recording_cancel">手指上滑，取消发送</string>
+    <string name="timer_default">00:00</string>
+    <string name="recording_cancel_tip">松开手指，取消发送</string>
+    <string name="recording_max_time">录音达到最大时间，是否发送？</string>
+
+    <!-- 拍照视频 -->
+    <string name="gallery_invalid">你的手机没有图库程序</string>
+    <string name="sdcard_not_enough_head_error">SD卡被拔出或存储空间不足，无法保存头像</string>
+    <string name="sdcard_not_enough_error">存储空间不足，无法保存此次多媒体消息</string>
+    <string name="download_video">正在下载视频</string>
+    <string name="download_video_fail">视频下载失败,请重试</string>
+    <string name="look_video_fail">无法播放该视频</string>
+    <string name="look_video_fail_try_again">暂时无法播放视频，请重试</string>
+    <string name="video_play">视频播放</string>
+    <string name="video_record">视频录制</string>
+    <string name="video_record_symbol">REC</string>
+    <string name="video_record_begin">开始录制</string>
+    <string name="connect_vedio_device_fail">无法连接视频设备 ，请稍候再试</string>
+    <string name="capture_video_size_in_kb">视频文件大小为: %1$dKB,</string>
+    <string name="capture_video_size_in_mb">视频文件大小为: %1$.2fMB,</string>
+    <string name="is_send_video">是否发送该视频？</string>
+    <string name="start_camera_to_record_failed">启动摄像头录制视频失败</string>
+    <string name="stop_fail_maybe_stopped">停止失败，可能已经停止</string>
+    <string name="video_exception">视频文件异常</string>
+    <string name="im_choose_video_file_size_too_large">视频文件过大，系统限制为20MB</string>
+    <string name="im_choose_video">请选择3GP MP4格式的视频文件</string>
+    <string name="video_record_short">录制视频太短</string>
+    <string name="contact">联系人</string>
+    <string name="call_records">通话记录</string>
+    <string name="download_progress_description">%1$s（%2$s/%3$s）</string>
+
+    <!-- 联系人选择器 -->
+    <string name="contact_selector">联系人选择器</string>
+
+    <!-- team -->
+    <string name="team_need_authentication">需要身份验证</string>
+    <string name="team_allow_anyone_join">允许任何人加入</string>
+    <string name="team_not_allow_anyone_join">不允许任何人申请加入</string>
+    <string name="team_admin_invite">管理员邀请</string>
+    <string name="team_everyone_invite">所有人邀请</string>
+    <string name="team_admin_update">管理员修改</string>
+    <string name="team_everyone_update">所有人修改</string>
+    <string name="team_invitee_need_authen">需要验证</string>
+    <string name="team_invitee_not_need_authen">不需要验证</string>
+    <string name="team_notify_mute">不提醒任何消息</string>
+    <string name="team_notify_all">提醒所有消息</string>
+    <string name="team_notify_manager">只提醒管理员消息</string>
+    <string name="team_nickname">群昵称</string>
+    <string name="team_nickname_none">未填写</string>
+    <string name="team_identity">身份</string>
+    <string name="remove_member">移出本群</string>
+    <string name="team_member_info">成员信息</string>
+    <string name="team_admin">管理员</string>
+    <string name="team_creator">群主</string>
+    <string name="team_member">群成员</string>
+    <string name="update_success">保存成功</string>
+    <string name="update_failed">保存失败, code:%d</string>
+    <string name="no_permission">没有权限</string>
+    <string name="set_team_admin">设为管理员</string>
+    <string name="cancel_team_admin">取消管理员</string>
+    <string name="team_member_remove_confirm">确定要将其移出群组么?</string>
+    <string name="team_annourcement">群公告</string>
+    <string name="invite_member">邀请成员</string>
+    <string name="team_name">群名称</string>
+    <string name="team_introduce">群介绍</string>
+    <string name="team_extension">扩展示例</string>
+    <string name="click_set">点击设置</string>
+    <string name="create_advanced_team">创建高级群</string>
+    <string name="reach_team_member_capacity">成员数量不能超过%1$d</string>
+    <string name="team_authentication">身份验证</string>
+    <string name="team_invite">邀请他人权限</string>
+    <string name="team_info_update">群资料修改权限</string>
+    <string name="team_invitee_authentication">被邀请人身份验证</string>
+    <string name="create_team">创建群</string>
+    <string name="over_team_member_capacity">邀请失败，成员人数上限为%1$d人</string>
+    <string name="over_team_capacity">创建失败，创建群数量达到限制</string>
+    <string name="create_team_failed">创建失败</string>
+    <string name="create_team_success">创建成功</string>
+    <string name="team_announce_title">标题</string>
+    <string name="team_announce_content">公告内容</string>
+    <string name="team_announce_notice">请输入群公告标题</string>
+    <string name="my_team_card">我的群名片</string>
+    <string name="team_introduce_hint">点击填写群介绍</string>
+    <string name="team_extension_hint">点击修改扩展内容</string>
+    <string name="team_announce_hint">点击填写群公告</string>
+    <string name="team_notification_config">消息提醒</string>
+    <string name="team_transfer_without_member">没有可转移的群成员</string>
+    <string name="team_invite_members_success">群成员邀请已发出</string>
+    <string name="team_invite_members_failed">群成员邀请失败</string>
+    <string name="team_transfer_success">群转移成功</string>
+    <string name="team_transfer_failed">群转移失败</string>
+    <string name="quit_team_success">您已退群</string>
+    <string name="quit_team_failed">退群失败</string>
+    <string name="quit_normal_team_success">您已经退出讨论组</string>
+    <string name="quit_normal_team_failed">退出讨论组失败</string>
+    <string name="dismiss_team_success">群已解散</string>
+    <string name="dismiss_team_failed">解散群失败</string>
+    <string name="dismiss_team">解散本群</string>
+    <string name="transfer_team">转让群</string>
+    <string name="quit_team">退出群</string>
+    <string name="quit_normal_team">退出讨论组</string>
+    <string name="team_apply_to_join">申请加入</string>
+    <string name="advanced_team">高级群</string>
+    <string name="normal_team">讨论组</string>
+    <string name="team_name_toast">群名称不能为空</string>
+    <string name="not_allow_empty">不能为空</string>
+    <string name="chat_setting">聊天信息</string>
+    <string name="team_settings_name">设置名称</string>
+    <string name="normal_team_name">讨论组名称</string>
+    <string name="remove_member_success">移除成员成功</string>
+    <string name="remove_member_failed">移除成员失败</string>
+    <string name="invite_member_success">邀请成员成功</string>
+    <string name="invite_member_failed">邀请成员失败</string>
+    <string name="team_create_notice">请添加群成员</string>
+    <string name="team_settings_set_name">取个名字吧</string>
+    <string name="team_not_exist">该群不存在</string>
+    <string name="normal_team_not_exist">该讨论组不存在</string>
+    <string name="mute_msg">设置禁言</string>
+    <string name="set_head_image">设置头像</string>
+    <string name="team_update_cancel">取消更新</string>
+    <string name="team_update_failed">群头像设置失败</string>
+    <string name="reach_capacity">人数已达上限</string>
+    <!-- 消息搜索 -->
+    <string name="message_search_no_result">无结果</string>
+    <string name="message_search_title">查看聊天内容</string>
+
+    <!-- image picker -->
+    <string name="picker_image_preview">预览</string>
+    <string name="delivery_situation_">送达情况:</string>
+    <string name="delivered_">受送达人:</string>
+    <string name="picker_image_send">发送</string>
+    <string name="picker_image_folder">相册</string>
+    <string name="picker_image_album_loading">相册加载中…</string>
+    <string name="picker_image_album_empty">相册中没有图片！</string>
+    <string name="picker_image_folder_info">共%d张</string>
+    <string name="picker_image_exceed_max_image_select">最多选择%d张图片！</string>
+    <string name="picker_image_send_select">完成（%d）</string>
+    <string name="picker_image_preview_original">发送原图</string>
+    <string name="picker_image_preview_original_select">发送原图（%s）</string>
+    <string name="picker_image_error">获取图片出错</string>
+    <string name="image_compressed_size">该原始图片大小为: %1$s,</string>
+    <string name="unknow_size">未知大小</string>
+    <string name="is_send_image">是否发送该原始图片？</string>
+    <string name="multi_image_compressed_size">原始图片总大小为: %1$s,</string>
+    <string name="is_send_multi_image">是否发送这些原始图片？</string>
+    <string name="waitfor_image_local">正在打开相册，请稍候\u2026</string>
+    <string name="is_submitting">正在提交...</string>
+    <string name="recapture">重拍</string>
+    <string name="image_show_error">图片显示异常</string>
+    <string name="memory_out">内存不足</string>
+    <string name="choose_from_photo_album">本地选择</string>
+    <string name="choose">选取</string>
+    <string name="edit">编辑</string>
+    <string name="crop">裁剪</string>
+    <string name="local_upload">本地上传</string>
+    <string name="acquisition">实时采集</string>
+    <string name="file_type">文件类型</string>
+    <string name="local_image">本地图片</string>
+    <string name="local_video">本地视屏</string>
+    <string name="local_record">本地录音</string>
+
+    <!-- 消息类型 -->
+    <string name="msg_type_image">图片</string>
+    <string name="msg_type_audio">语音</string>
+
+    <string name="msg_type_photo">照片</string>
+    <string name="msg_type_shooting">拍摄</string>
+
+    <!-- 查看大图 -->
+    <string name="download_picture_fail">图片下载失败</string>
+    <string name="look_up_original_photo_format">查看原图（%s）</string>
+
+    <!--全文检索-->
+    <string name="fts_enable">全文检索(FTS4)</string>
+    <string name="fts_prefix_hit">前缀匹配高亮检索结果</string>
+    <string name="msg_search">全文检索</string>
+    <string name="msg_search_limit">全文检索显示条数</string>
+    <string name="inputpassword">输入密码</string>
+    <string name="input_content">请输入内容</string>
+    <string name="account_nicname">账号/昵称</string>
+    <string name="pass">通过</string>
+    <string name="mes_content">消息内容</string>
+    <string name="mes_theme">消息主题</string>
+    <string name="withinwords_5">5个字内</string>
+
+    <string name="caichan_true">属实</string>
+    <string name="caichan_false">不实</string>
+
+    <string name="refuse">拒绝</string>
+    <string name="dismissed">驳回</string>
+    <string name="property_info">财产信息</string>
+    <string name="property_type">财产类型</string>
+    <string name="interactive_record">互动记录</string>
+    <string name="base_info">基本信息</string>
+    <string name="case_association">案件关联</string>
+    <string name="caseagent_approval">案件代理审批详情</string>
+    <string name="executed_body">执行主体</string>
+    <string name="executed_record">执行记录</string>
+    <string name="litigation_status">诉讼地位</string>
+    <string name="agenttype">代理类型</string>
+    <string name="id_number">证件号码</string>
+    <string name="unitname">单位名称</string>
+    <string name="contactinformation">联系方式</string>
+    <string name="executenumber">当事人证件号</string>
+    <string name="idnumber">证件号码</string>
+    <string name="remarks">备注</string>
+    <string name="look">查看</string>
+    <string name="operationed">操作成功</string>
+    <string name="processing_person">处理人</string>
+    <string name="final_count_">终本次数 :</string>
+    <string name="unassociatedcase">无关联案件</string>
+    <string name="associatedcase_count_">关联案件数 :</string>
+    <string name="seizure_car_count_">被扣押车辆 :</string>
+
+    <!-- location -->
+    <string name="location_navigate">导航</string>
+    <string name="location_loading">正在定位</string>
+    <string name="location_map">地图定位</string>
+    <string name="my_location">我的位置</string>
+    <string name="location_address_unkown">该位置信息暂无</string>
+    <string name="format_mylocation">我的位置：%s</string>
+    <string name="location_address_fail">获取位置信息失败</string>
+    <string name="tools_selected">选择工具</string>
+    <string name="friends_map_navigation_web">在网页中打开</string>
+    <string name="location_open_map_error">打开地图出错</string>
+    <string name="title_activity_guan_lian">GuanLianActivity</string>
+    <string name="disciplinary_measures">已惩戒措施</string>
+    <string name="rule_guide">规则指引</string>
+    <string name="sealproperty_count_">被查封房产数量 :</string>
+    <string name="start_record">开始录音</string>
+    <string name="replied">已回复</string>
+    <string name="pending_reply">待回复</string>
+    <string name="setting">设置</string>
+    <string name="fast_notifycation_setting">快捷消息</string>
+    <string name="fast_message">快捷消息</string>
+    <string name="feedback_message_notifycation">网络查控反馈消息</string>
+    <string name="feedback">反馈</string>
+    <string name="blockchain">上链信息</string>
+    <string name="create_finalinter">生成笔录</string>
+
+    <string name="automatic_push">自动推送</string>
+    <string name="push_time">推送时间</string>
+    <string name="message_kind">消息种类</string>
+    <string name="push_record">消息记录</string>
+    <string name="push_num_limit">推送条数上限</string>
+    <string name="push_amountlimit">自动推送金额限制</string>
+    <string name="banned_setting">当事人禁言</string>
+    <string name="banned_message">全部禁言</string>
+
+s
+    <string name="tip_closed_feedback">挂壁后，将停止向当事人推送网络查控反馈情况</string>
+    <string name="tip_amount_notgreaterthan_10000">金额不能大于100000元</string>
+    <string name="tip_amount_notlessthan_0">金额不能小于等于0元</string>
+    <string name="tip_number_notlessthan_1">条数限制不能小于1条</string>
+    <string name="tip_number_notgreaterthan_99">条数限制不能大于99条</string>
+    <string name="tip_type_notchooseed">类型未选择</string>
+    <string name="tip_pushdate_notchooseed">推送日期未选中</string>
+    <string name="tip_pushtime_notchooseed">推送时间未选择</string>
+    <string name="tip_need_material">携带材料：委托代理人和法定代表人的身份证明、身份证复印件。</string>
+    <string name="tip_notfind_app">没有找到相关App,是否去下载</string>
+
+    <string name="colon">:</string>
+    <string name="casetype_zaizhi">在执</string>
+    <string name="casetype_zhongben">终本</string>
+    <string name="casetype_yijie">已结</string>
+
+
+
+    <string name="case_payment">案款发放</string>
+    <string name="execute_notifycation">执行通知书</string>
+    <string name="provide_date">发放日期</string>
+    <string name="send_date">寄送日期</string>
+    <string name="provide_amount">发放金额</string>
+    <string name="execute_notifycation_type">执行通知书/财产报告令/传票</string>
+    <string name="next_measure">下一步措施</string>
+    <string name="inform_item">告知项</string>
+    <string name="auctionplatform_choose">拍卖平台选择</string>
+    <string name="taobao">淘宝网</string>
+    <string name="jingdong">京东网</string>
+    <string name="peoplecourt_litigationasset">人民法院诉讼资产网</string>
+    <string name="public_shot">公拍网</string>
+    <string name="auctionindustry_association">中国拍卖行业协会网</string>
+    <string name="confirmauction_supportagency">拍卖摇号确认拍卖辅助机构</string>
+
+    <string name="pmsj">拍卖时间</string>
+    <string name="pmbdwmc">拍卖标的物名称</string>
+    <string name="pmbdwsyr">拍卖标的物所有人</string>
+    <string name="cjj">成交价</string>
+    <string name="dzje">到账金额</string>
+    <string name="dzsj">到账时间</string>
+
+
+    <string name="nodename">节点名称</string>
+    <string name="surveytype">调查类型</string>
+    <string name="surveypeople">被调查人名称</string>
+    <string name="surveytime">调查时间</string>
+    <string name="surveyaddress">调查地点</string>
+
+    <string name="implementation_measures">执行措施</string>
+    <string name="collection_people">采集人</string>
+    <string name="property_measure">财产措施</string>
+    <string name="reminder_content">提醒内容</string>
+    <string name="collection_time">采集时间</string>
+    <string name="collection_address">采集地点</string>
+
+
+    <string name="evaluation_report">评估报告</string>
+    <string name="evaluation_price">评估价格</string>
+    <string name="evaluation_subjectname">评估标的物名称</string>
+    <string name="subjec_tname">标的物名称</string>
+    <string name="evaluation_subjectpeople">评估标的物所有人</string>
+    <string name="subject_people">标的物所有人</string>
+    <string name="interview_time">约谈时间</string>
+    <string name="interview_address">约谈地点</string>
+    <string name="ruling_property">以物抵债裁定</string>
+    <string name="deductible_amount">抵折金额</string>
+    <string name="review_result">审查结果</string>
+    <string name="final_settlement">终本结案</string>
+    <string name="type">类型</string>
+    <string name="got_it">知道了</string>
+    <string name="remind_content">您设置了非工作时间当事人禁言，若需继续与当事人沟通，请前往“设置”-“当事人禁言”关闭禁言功能或通过“虚拟电话”直接与当事人联系</string>
+    <string name="remind_content1">非工作时间当事人禁言，若需继续与当事人沟通，请通过“虚拟电话”直接与当事人联系</string>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/unit_10"
+    android:layout_marginRight="@dimen/unit_10"
+    android:layout_marginTop="@dimen/unit_10"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/unit_15"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_dsr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_dsr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/unit_10"
+            android:text="当事人"
+            android:textColor="@color/textcolor_01"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <TextView
+            android:id="@+id/tv_dsr_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_dsr"
+            android:layout_marginLeft="@dimen/unit_10"
+            android:layout_toRightOf="@+id/tv_dsr"
+            android:text="2019-06-11"
+            android:textSize="@dimen/text_size_12"
+            />
+
+        <TextView
+            android:id="@+id/tv_dsr_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dsr"
+            android:layout_marginBottom="@dimen/unit_10"
+            android:text="法官您好，我的案件怎么样了"
+            />
+
+        <TextView
+            android:id="@+id/tv_reply"
+            android:textColor="@color/color_view_bg"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/tv_dsr"
+            android:text="回复"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_fg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_fg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/unit_10"
+            android:text="李法官"
+            android:textColor="@color/textcolor_01"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <TextView
+            android:id="@+id/tv_fg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_fg"
+            android:layout_marginLeft="@dimen/unit_10"
+            android:layout_toRightOf="@+id/tv_fg"
+            android:text="2019-06-11"
+            android:textSize="@dimen/text_size_12"
+            />
+
+        <TextView
+            android:id="@+id/tv_fg_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fg"
+            android:text="正在处理中，请稍后"
+            />
+    </RelativeLayout>
+</LinearLayout>

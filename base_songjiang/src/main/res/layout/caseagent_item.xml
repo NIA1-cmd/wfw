@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/unit_10"
+    android:layout_marginLeft="@dimen/unit_10"
+    android:layout_marginRight="@dimen/unit_10">
+
+    <TextView
+        android:id="@+id/tv_casename"
+        android:layout_marginLeft="@dimen/unit_10"
+
+        style="@style/casename_textstyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/unit_10"
+        android:layout_marginTop="@dimen/unit_10"
+        android:paddingLeft="@dimen/unit_00"
+        android:textColor="@color/textcolor_01" />
+
+    <include
+        android:layout_marginRight="@dimen/unit_20"
+
+        android:id="@+id/ic_line"
+        layout="@layout/line_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/unit_0.5"
+        android:layout_below="@+id/tv_casename"
+        android:layout_marginBottom="@dimen/unit_10"
+        android:layout_marginLeft="@dimen/unit_10"
+        android:layout_marginTop="@dimen/unit_10" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_line"
+        android:layout_marginBottom="@dimen/unit_20"
+        android:layout_marginLeft="@dimen/unit_10"
+        android:layout_marginRight="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_apply"
+            style="@style/apply_textstyle_02"
+            android:visibility="gone"
+
+            tools:text="申请人" />
+
+        <TextView
+            android:id="@+id/tv_executed"
+
+            style="@style/apply_textstyle_02"
+            android:layout_marginLeft="@dimen/unit_10"
+            android:visibility="gone"
+            tools:text="申请人" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/unit_12"
+            android:layout_height="@dimen/unit_12"
+            android:src="@drawable/skip" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_applytime"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_casename"
+        android:layout_alignBottom="@+id/tv_casename"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/unit_20"
+        tools:text="2017-9-20 12.25"
+        />
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="@dimen/unit_50"
+        android:layout_height="@dimen/unit_50"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/unit_100" />
+</RelativeLayout>

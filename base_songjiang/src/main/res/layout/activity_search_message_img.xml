@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/message_bc"
+    android:orientation="vertical"
+    >
+
+    <com.oncloudsoft.sdk.view.BaseTitleView
+        android:id="@+id/base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="图片及影片"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_28"
+            android:paddingBottom="@dimen/unit_04"
+            android:paddingLeft="@dimen/unit_15"
+            android:id="@+id/tv_head"
+            android:background="@color/color_cc19294d"
+            android:textColor="@color/white"
+            android:alpha="10"
+            android:paddingTop="@dimen/unit_04"
+            />
+    </FrameLayout>
+</LinearLayout>

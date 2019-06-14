@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.oncloudsoft.sdk.view.BaseTitleView
+        android:id="@+id/bt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="申请审核"
+        app:title_type="white">
+
+    </com.oncloudsoft.sdk.view.BaseTitleView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_actiontitle"
+                style="@style/text_style_03"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/unit_30"
+                android:gravity="center_horizontal"
+                tools:text="fdsfafaf" />
+
+            <include
+                layout="@layout/line_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unit_0.5"
+                android:layout_marginBottom="@dimen/unit_30"
+                android:layout_marginLeft="@dimen/unit_50"
+                android:layout_marginRight="@dimen/unit_50"
+                android:layout_marginTop="@dimen/unit_30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit_10"
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/tv_applys"
+
+                    style="@style/text_style_09"
+                    android:text="@string/apply_people_s" />
+
+                <TextView
+                    android:id="@+id/tv_apply"
+                    style="@style/text_style_09"
+                    android:layout_marginLeft="@dimen/unit_05"
+
+                    tools:text="dsfsfsd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit_10"
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+                android:layout_marginTop="@dimen/unit_04"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_executeds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="被申请人:"
+                    android:textColor="@color/textcolor_01"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <TextView
+                    android:id="@+id/tv_executed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/unit_05"
+                    android:textColor="@color/textcolor_01"
+                    android:textSize="@dimen/textsize_normal" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_style_09"
+
+                android:layout_marginBottom="@dimen/unit_10"
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+                android:layout_marginTop="@dimen/unit_04"
+                android:text="申请事项" />
+
+            <TextView
+                android:id="@+id/tv_matters"
+
+                style="@style/text_style_02"
+                android:layout_marginBottom="@dimen/unit_10"
+                android:layout_marginLeft="@dimen/unit_20"
+
+                android:layout_marginRight="@dimen/unit_20"
+                android:layout_marginTop="@dimen/unit_10" />
+
+            <TextView
+                style="@style/text_style_09"
+                android:layout_marginBottom="@dimen/unit_10"
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+
+                android:text="事实与理由" />
+
+            <TextView
+                android:id="@+id/tv_facts_reasons"
+                style="@style/text_style_02"
+                android:layout_marginBottom="@dimen/unit_10"
+
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+                android:layout_marginTop="@dimen/unit_10" />
+
+            <TextView
+
+                style="@style/text_style_05"
+
+
+                android:layout_marginLeft="@dimen/unit_40"
+                android:text="此致" />
+
+            <TextView
+                style="@style/text_style_05"
+                android:layout_marginBottom="@dimen/unit_10"
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+                android:layout_marginTop="@dimen/unit_10"
+                android:text="上海市松江法院" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+                android:layout_marginTop="@dimen/unit_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_style_05"
+
+                    android:text="@string/apply_people_"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lastapply"
+                    style="@style/text_style_05" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/text_style_05"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/unit_10"
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+                android:layout_marginTop="@dimen/unit_10"
+
+                tools:text="sdfsf" />
+
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/unit_10"
+                android:layout_marginLeft="@dimen/unit_20"
+                android:layout_marginRight="@dimen/unit_20"
+                android:layout_marginTop="@dimen/unit_10"
+                android:gravity="right"
+                android:textColor="@color/maincolor_01"
+                android:visibility="gone"
+                tools:text="胜多负少的发" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_refuse"
+                style="@style/linearLayout_style_01"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/unit_10"
+                    android:background="@color/backgroundcolor_01" />
+
+                <LinearLayout
+                    style="@style/linearLayout_style_01"
+                    android:layout_marginLeft="@dimen/unit_20"
+                    android:layout_marginRight="@dimen/unit_20"
+                    android:paddingTop="@dimen/unit_10">
+
+                    <View
+                        android:layout_width="@dimen/unit_02"
+                        android:layout_height="@dimen/unit_10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/unit_10"
+                        android:background="@color/color_view_bg" />
+
+                    <TextView
+                        style="@style/text_style_09"
+                        android:text="驳回理由" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_refuse"
+                    style="@style/text_style_05"
+                    android:layout_marginBottom="@dimen/unit_10"
+                    android:layout_marginLeft="@dimen/unit_20"
+                    android:layout_marginRight="@dimen/unit_20"
+                    android:layout_marginTop="@dimen/unit_10" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/unit_10"
+                    android:background="@color/backgroundcolor_01" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/unit_05"
+        android:paddingTop="@dimen/unit_05"
+
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/bt_refuse"
+            style="@style/button_style_red02"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dismissed" />
+
+        <Button
+            android:id="@+id/bt_pass"
+            style="@style/button_style_blue02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pass" />
+    </LinearLayout>
+</LinearLayout>

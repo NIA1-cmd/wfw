@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--沉浸式状态栏-->
+    <style name="TranslucentStatusTheme" parent="SongjiangAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!--淡蓝色背景的-->
+    <style name="transparent_dialog" parent="@style/windowIsTransTheme">
+        <item name="android:windowAnimationStyle">@style/dialog_activity_animation</item>
+        <item name="android:windowBackground">@color/translucent</item>
+    </style>
+    <!--全透明背景的-->
+    <style name="transparent_dialogs" parent="@style/transparent_dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+</resources>

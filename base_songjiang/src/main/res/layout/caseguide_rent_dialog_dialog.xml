@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/white_radius">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/unit_30"
+        android:layout_marginTop="@dimen/unit_30"
+        android:text="被执行人房产处于租赁状态如何执行？"
+        android:textColor="@color/textcolor_05" />
+
+    <include
+        android:id="@+id/ic_line01"
+        layout="@layout/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_0.5"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/unit_20"
+        android:layout_marginRight="@dimen/unit_20" />
+
+    <LinearLayout
+        android:id="@+id/ll_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/unit_40"
+        android:layout_alignLeft="@+id/ic_line01"
+        android:layout_alignRight="@+id/ic_line01"
+        android:layout_below="@+id/ic_line01"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="法律情形"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/textsize_small" />
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="建议方案"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/textsize_small" />
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="办案指引"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/textsize_small" />
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/ic_line02"
+        layout="@layout/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_0.5"
+        android:layout_below="@+id/ll_form_title"
+        android:layout_marginLeft="@dimen/unit_20"
+        android:layout_marginRight="@dimen/unit_20" />
+
+    <LinearLayout
+        android:id="@+id/ll_form_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ic_line01"
+        android:layout_alignRight="@+id/ic_line01"
+        android:layout_below="@+id/ic_line02"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:padding="@dimen/unit_05"
+            android:lineSpacingExtra="@dimen/unit_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="在人民法院查封之前已经签订合法有效的书面租赁合同并占有使用该不动产。"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/textsize_small" />
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:padding="@dimen/unit_05"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="不可强制执行"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/textsize_small" />
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_rent"
+                android:padding="@dimen/unit_05"
+                android:lineSpacingExtra="@dimen/unit_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
+                android:gravity="center"
+                android:text="如何审查租赁合同是否签订于抵押查封前？"
+                android:textColor="@color/maincolor_01"
+                android:textSize="@dimen/textsize_small" />
+            <include
+                layout="@layout/line_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unit_0.5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/unit_05"
+                android:id="@+id/tv_house"
+                android:lineSpacingExtra="@dimen/unit_03"
+                android:gravity="center"
+                android:text="如何审查案外人在抵押查封前已经占有且至今占有房屋？"
+                android:textColor="@color/maincolor_01"
+                android:textSize="@dimen/textsize_small" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/ic_line03"
+        layout="@layout/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_0.5"
+        android:layout_below="@+id/ll_form_01"
+        android:layout_marginLeft="@dimen/unit_20"
+        android:layout_marginRight="@dimen/unit_20" />
+
+    <LinearLayout
+        android:id="@+id/ll_form_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ic_line01"
+        android:layout_alignRight="@+id/ic_line01"
+        android:layout_below="@+id/ic_line03"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:padding="@dimen/unit_05"
+            android:lineSpacingExtra="@dimen/unit_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="承租人与被执行人恶意串通，以明显不合理的低价承租被执行人的不动产或者伪造交付租金证据的。"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/textsize_small" />
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:padding="@dimen/unit_05"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="可强制执行"
+            android:textColor="@color/textcolor_02"
+            android:textSize="@dimen/textsize_small" />
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/line_layout"
+            android:layout_width="@dimen/unit_0.5"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/ic_line04"
+        layout="@layout/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_0.5"
+        android:layout_below="@+id/ll_form_02"
+        android:layout_marginLeft="@dimen/unit_20"
+        android:layout_marginRight="@dimen/unit_20" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        style="@style/button_style_blue01"
+        android:layout_below="@+id/ic_line04"
+        android:layout_marginBottom="@dimen/unit_20"
+        android:layout_marginTop="@dimen/unit_20"
+        android:text="关闭" />
+
+
+</RelativeLayout>

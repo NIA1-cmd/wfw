@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/icon_pdf" />-->
+
+        <!--<TextView style="@style/text_style_09" android:text="和解协议.pdf" />-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/unit_170"
+        android:layout_height="@dimen/unit_05"
+
+        android:background="@drawable/red_bottom_radius"
+
+        />
+
+
+</LinearLayout>

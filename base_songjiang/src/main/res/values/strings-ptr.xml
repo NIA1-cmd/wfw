@@ -1,0 +1,5 @@
+<resources>
+    <string name="loading">正在加载中...</string>
+    <string name="load_failed">登录过期，请重新登录</string>
+    <string name="load_end">没有更多数据</string>
+</resources>

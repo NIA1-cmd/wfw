@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.oncloudsoft.sdk.view.BaseTitleView
+        android:id="@+id/bt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+  />
+
+    <TextView
+        android:id="@+id/tv_titlename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/unit_35"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/unit_35"
+        android:lineSpacingExtra="@dimen/unit_05"
+        android:layout_marginTop="@dimen/unit_40"
+        android:textColor="@color/textcolor_01"
+        android:textSize="@dimen/textsize_large"
+        tools:text="dsfsdfs" />
+
+    <include
+        android:id="@+id/ic_line"
+        android:layout_marginTop="@dimen/unit_20"
+        android:layout_marginLeft="@dimen/unit_30"
+        android:layout_marginRight="@dimen/unit_30"
+        layout="@layout/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_0.5" />
+
+    <TextView
+        android:layout_marginTop="@dimen/unit_20"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/unit_30"
+        android:lineSpacingExtra="@dimen/unit_06"
+        android:layout_marginRight="@dimen/unit_30"
+        android:textColor="@color/textcolor_02"
+        android:textSize="@dimen/text_size_14"
+        tools:text="dsfsdfs" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_marginLeft="@dimen/unit_40"
+        android:layout_marginRight="@dimen/unit_40"
+        android:layout_marginTop="@dimen/unit_40"
+        style="@style/button_style_blue01"
+        android:text="返回" />
+
+
+</LinearLayout>

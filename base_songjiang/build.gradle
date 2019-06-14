@@ -1,0 +1,137 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.appTargetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+//        renderscriptTargetApi rootProject.ext.compileSdkVersion
+//        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi"  /*, "arm64-v8a"*/ //腾讯x5内核不支持64
+        }
+        packagingOptions {//加上这些代码
+//             pickFirst 'lib/armeabi-v7a/libstlport_shared.so'
+//             pickFirst 'lib/armeabi-v8a/libstlport_shared.so'
+             pickFirst 'lib/arm64-v8a/libne_audio.so'
+//             pickFirst 'lib/x86/libstlport_shared.so'
+//             pickFirst 'lib/x86_64/libstlport_shared.so'
+         }
+
+    }
+
+    buildTypes {
+
+        debug {
+            // 代码混淆
+            minifyEnabled false
+            // 移除无用的resource文件
+            //     shrinkResources true
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "API_HOST", "\"debug\"")
+        }
+
+
+        release {
+            //是否优化zip
+            zipAlignEnabled true
+            //  移除无用的resource文件
+            //  shrinkResources true
+            //启用代码混淆
+            // 代码混淆
+            minifyEnabled false
+            // 移除无用的resource文件
+            //    shrinkResources true
+            //启用debug模式
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "API_HOST", "\"release\"")
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets/']
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+    implementation project.APPCOMPATV7
+    implementation project.CONSTRAINT
+    implementation DESIGN
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+
+//----------------------------------IM配置开始-------------------------------------------
+    implementation 'com.netease.nimlib:basesdk:6.1.1'
+    // 音视频和互动白板服务需要
+    implementation 'com.netease.nimlib:nrtc:6.1.1'
+    // 音视频需要
+    implementation 'com.netease.nimlib:avchat:6.1.1'
+    // 聊天室需要
+    implementation 'com.netease.nimlib:chatroom:6.1.1'
+    // 互动白板服务需要
+    implementation 'com.netease.nimlib:rts:6.1.1'
+    // 全文检索服务需要
+    implementation 'com.netease.nimlib:lucene:6.1.1'
+    // 小米、华为、魅族、fcm 推送
+    implementation 'com.netease.nimlib:push:6.1.1'
+    // 添加依赖。注意，版本号必须一致。
+
+    // 小米、华为、魅族、fcm 推送
+//    implementation 'com.netease.nimlib:push:6.1.1'
+    api 'me.everything:overscroll-decor-android:1.0.4'
+    //api 'me.leolin:ShortcutBadger:1.1.17@aar'
+    api 'com.github.bumptech.glide:glide:4.2.0'
+
+    api 'com.github.lovetuzitong:MultiImageSelector:1.2'
+//----------------------------------IM配置结束-------------------------------------------
+
+//------------------------------------图片选择库开始-----------------------------------------------------
+    implementation 'com.zhy:base-adapter:3.0.3'
+//------------------------------------图片选择库结束-----------------------------------------------------
+
+
+    implementation files('libs/java-json.jar')
+    implementation files('libs/AMap2DMap_3.0.0_AMapSearch_3.6.1_AMapLocation_3.2.1_20161228.jar')
+    //js bridge
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    //okhttp
+    implementation OKHTTP
+    //权限申请
+    implementation ANDPERMISSION
+    //fastJson
+    implementation FASTJSON
+    //图片浏览左右滑动切换
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    //饺子播放器
+    implementation 'cn.jzvd:jiaozivideoplayer:6.4.1'
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //recyclerView
+    implementation 'com.android.support:recyclerview-v7:26.0.2'
+    implementation 'com.github.13311183035:YiDongZhiXing:1.0.1'
+
+}

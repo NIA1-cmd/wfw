@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形ImageView-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!--注意这里的name要和自定义View的名称一致，不然在xml布局中无法引用-->
+    <declare-styleable name="CircleBarView">
+        <attr name="progress_color" format="color"></attr>
+        <attr name="bg_color" format="color"></attr>
+
+        <attr name="bar_width" format="dimension"></attr>
+
+        <attr name="start_angle" format="float"></attr>
+        <attr name="sweep_angle" format="float"></attr>
+    </declare-styleable>
+
+    <!--仿照水滴效果-->
+    <declare-styleable name="WaveProgressView">
+        <attr name="wave_color" format="color"></attr>
+        <attr name="second_wave_color" format="color"></attr>
+        <attr name="wave_bg_color" format="color"></attr>
+
+        <attr name="wave_width" format="dimension"></attr>
+        <attr name="wave_height" format="dimension"></attr>
+    </declare-styleable>
+
+    <!--<declare-styleable name="GoogleCircleProgressView">-->
+    <!--<attr name="gcp_inner_radius" format="dimension" />-->
+    <!--<attr name="gcp_background_color" format="color" />-->
+    <!--<attr name="gcp_progress_color" format="color" />-->
+    <!--<attr name="gcp_progress_stoke_width" format="dimension" />-->
+    <!--<attr name="gcp_show_arrow" format="boolean" />-->
+    <!--<attr name="gcp_enable_circle_background" format="boolean" />-->
+    <!--<attr name="gcp_arrow_width" format="dimension" />-->
+    <!--<attr name="gcp_arrow_height" format="dimension" />-->
+
+    <!--<attr name="gcp_progress" format="integer" />-->
+    <!--<attr name="gcp_max" format="integer" />-->
+
+
+    <!--<attr name="gcp_progress_text_size" format="dimension" />-->
+    <!--<attr name="gcp_progress_text_color" format="color" />-->
+
+    <!--&lt;!&ndash;<attr name="gcp_progress_text_offset" format="dimension"/>&ndash;&gt;-->
+
+    <!--<attr name="gcp_progress_text_visibility" format="enum">-->
+    <!--<enum name="visible" value="0" />-->
+    <!--<enum name="invisible" value="1" />-->
+    <!--</attr>-->
+    <!--</declare-styleable>-->
+
+    <!--自定义的音频波浪线-->
+    <declare-styleable name="VoiceLineView">
+        <!--中间线的颜色，就是波形的时候，大家可以看到，中间有一条直线，就是那个-->
+        <attr name="middleLine" format="color" />
+        <!--中间线的高度，因为宽度是充满的-->
+        <attr name="middleLineHeight" format="dimension" />
+        <!--波动的线的颜色，如果是矩形样式的话，刚是矩形的颜色-->
+        <attr name="voiceLine" format="color" />
+        <!--波动线的横向移动速度，线的速度的反比，即这个值越小，线横向移动越快，越大线移动越慢，默认90-->
+        <attr name="lineSpeed" format="integer" />
+        <!--矩形的宽度-->
+        <attr name="rectWidth" format="dimension" />
+        <!--矩形之间的间隔-->
+        <attr name="rectSpace" format="dimension" />
+        <!--矩形的初始高度，就是没有声音的时候，矩形的高度-->
+        <attr name="rectInitHeight" format="dimension" />
+        <!--所输入音量的最大值-->
+        <attr name="maxVolume" format="float" />
+        <!--控件的样式，一共有两种，波形或者矩形-->
+        <attr name="viewMode">
+            <enum name="line" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+        <!--灵敏度，默认值是4-->
+        <attr name="sensibility">
+            <enum name="one" value="1" />
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+            <enum name="four" value="4" />
+            <enum name="five" value="5" />
+        </attr>
+        <!--精细度，绘制曲线的时候，每几个像素绘制一次，默认是1，一般，这个值越小，曲线越顺滑，
+            但在一些旧手机上，会出现帧率过低的情况，可以把这个值调大一点，在图片的顺滑度与帧率之间做一个取舍-->
+        <attr name="fineness">
+            <enum name="one" value="1" />
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!--公共的标题View-->
+    <declare-styleable name="BaseTitleView">
+        <attr name="leftText" format="string|reference" />
+        <attr name="titleText" format="string|reference" />
+        <attr name="rightText" format="string|reference" />
+        <attr name="leftImage" format="reference" />
+        <attr name="rightImage" format="reference" />
+
+        <!--<attr name="titleColor" format="reference" />-->
+
+
+        <attr name="backIconVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="right_tv_color" format="enum">
+            <enum name="white" value="1" />
+        </attr>
+        <attr name="title_type" format="enum">
+            <enum name="normal" value="1" />
+            <enum name="blue" value="1" />
+            <enum name="white" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <!--公共的文本View-->
+    <declare-styleable name="BaseItemTextView">
+        <attr name="labName" format="string|reference" />
+        <attr name="endText" format="string|reference" />
+        <attr name="endicon" format="reference" />
+        <attr name="labicon" format="reference" />
+
+        <attr name="endIconVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="8" />
+        </attr>
+        <attr name="ent_color" format="enum">
+            <enum name="normal" value="1" />
+            <enum name="normal1" value="2" />
+        </attr>
+        <attr name="start_color" format="enum">
+            <enum name="normal" value="1" />
+            <enum name="normal1" value="2" />
+        </attr>
+        <attr name="lineVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="8" />
+        </attr>
+
+    </declare-styleable>
+
+    <!--公共输入的文本View-->
+    <declare-styleable name="BaseItemEditext">
+        <attr name="be_labName" format="string|reference" />
+        <attr name="be_endhint" format="string|reference" />
+        <attr name="be_textType" format="enum">
+            <enum name="input" value="2" />
+            <enum name="chooseed" value="1" />
+        </attr>
+        <attr name="be_lineVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="8" />
+        </attr>
+
+
+        <attr name="be_inputtype" format="enum">
+            <enum name="xiaoshu" value="2" />
+            <enum name="normal" value="3" />
+        </attr>
+
+
+    </declare-styleable>
+    <!--表单标题-->
+    <declare-styleable name="LabTitleLayout">
+        <attr name="titleName" format="string|reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="LoadingView">
+        <attr name="radius" format="float|reference" />
+        <attr name="left_ball_color" format="color|reference" />
+        <attr name="right_ball_color" format="color|reference" />
+        <attr name="animation_speed" format="float|reference" />
+        <attr name="need_animation" format="boolean|reference" />
+    </declare-styleable>
+
+
+    <!--自定义日历控件-->
+    <declare-styleable name="CalendarView">
+        <!--是否显示农历-->
+        <attr name="show_lunar" format="boolean" />
+        <!--是否显示上月和下月-->
+        <attr name="show_last_next" format="boolean" />
+        <!--是否显示节假日-->
+        <attr name="show_holiday" format="boolean" />
+        <!--是否显示节气-->
+        <attr name="show_term" format="boolean" />
+        <!--阳历的日期颜色-->
+        <attr name="solar_color" format="color" />
+        <!--阳历的日期尺寸-->
+        <attr name="solar_size" format="integer" />
+        <!--农历的日期颜色-->
+        <attr name="lunar_color" format="color" />
+        <!--农历的日期尺寸-->
+        <attr name="lunar_size" format="integer" />
+        <!--节日文字颜色-->
+        <attr name="holiday_color" format="color" />
+        <!--选中的日期文字颜色-->
+        <attr name="choose_color" format="color" />
+        <!--选中的日期背景-->
+        <attr name="day_bg" format="reference" />
+        <!--单选时切换月份，是否选中上次的日期-->
+        <attr name="switch_choose" format="boolean" />
+        <!--设置单选、多选-->
+        <attr name="choose_type" format="enum">
+            <enum name="single" value="0" />
+            <enum name="multi" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--自定义日历控件  周-->
+    <declare-styleable name="WeekView">
+        <!--周的表示形式（x.x.x.x.x.x.x）-->
+        <attr name="week_str" format="string" />
+        <!--周的文字颜色-->
+        <attr name="week_color" format="color" />
+        <!--周的文字大小-->
+        <attr name="week_size" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="BaseScaleView">
+
+        <attr name="view_min" format="integer" />
+        <attr name="view_max" format="integer" />
+        <attr name="view_margin" format="dimension" />
+        <attr name="view_height" format="dimension" />
+
+    </declare-styleable>
+
+
+
+
+</resources>

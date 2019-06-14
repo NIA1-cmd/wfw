@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundcolor_01"
+    android:orientation="vertical"
+    >
+    <com.oncloudsoft.sdk.view.BaseTitleView
+        android:id="@+id/my_title"
+        app:title_type="white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="添加群成员"
+        app:rightText="完成"
+        />
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/maincolor_01"
+        >
+
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="@dimen/action_bar_height"
+            android:layout_height="@dimen/action_bar_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/bubble_padding_left"
+            android:padding="@dimen/unit_16"
+            android:src="@drawable/icon_white_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="群成员列表"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize_04"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/unit_10"
+            android:text="完成"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>-->
+
+    <include layout="@layout/ease_search_bar" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:overScrollMode="never"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rect_gray2"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="30.0dip"
+            android:visibility="invisible"
+            />
+
+        <com.oncloudsoft.sdk.widget.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="26.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            />
+    </FrameLayout>
+</LinearLayout>

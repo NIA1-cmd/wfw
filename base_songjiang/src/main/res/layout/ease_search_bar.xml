@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/unit_50"
+    android:id="@+id/relativelayout"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/unit_20"
+        android:layout_marginRight="@dimen/unit_20"
+        android:background="@drawable/gary_radius_04"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/unit_05"
+        android:paddingTop="@dimen/unit_05">
+
+        <EditText
+
+
+            android:id="@+id/query"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/unit_05"
+            android:gravity="bottom"
+            android:hint="@string/search"
+            android:maxLength="20"
+
+            android:minWidth="300dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="25dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textcolor_04"
+            android:textCursorDrawable="@drawable/shape_white"
+            android:textSize="@dimen/textsize_normal" />
+
+
+
+        <ImageView
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/unit_15"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_del" />
+    </LinearLayout>
+
+
+</RelativeLayout>
